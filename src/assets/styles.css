@@ -1,0 +1,29 @@
+.sider {
+	background-color: #FFFFFF !important; 
+	border: 0.5px solid #D2D2D2 !important;
+}
+
+.sider-menu {
+	width: 100%;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+}
+
+.sider-img-toggle {
+	width: 20px;
+	height: 17px;
+}
+
+.sider-img-menu {
+	width: 23px;
+	height: 20px;
+	background: #FFFFFF;
+	padding: 3px;
+	border-radius: 3px;
+}
+
+.sider-img-menu-label {
+	margin-left: 10px;
+	height: 20px;
+}
