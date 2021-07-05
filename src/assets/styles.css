@@ -259,12 +259,24 @@ h1 {
 	margin: 10px;
 }
 
+.calendar {
+	float: right !important;
+}
+
 @media only screen and (max-width: 575px) {
   .hiddenMobile {
 		display: none !important;
 	}
 
 	.full-width-mobile {
+		width: 100% !important;
+	}
+
+	.calendar {
+		width: 100% !important;
+	}
+	
+	.calendar-input {
 		width: 100% !important;
 	}
 }
