@@ -5,6 +5,7 @@ import List from "../components/list";
 import { useContext } from "react";
 import { BestSellingContext } from "../contexts/best-selling-context";
 import { TopCompetitorContext } from "../contexts/top-competitor-context";
+import HeadingBar from "../components/heading-bar";
 
 const Dashboard = () => {
 	const [bestSelling,] = useContext(BestSellingContext);
@@ -22,9 +23,7 @@ const Dashboard = () => {
 			</Row>
 			<Row className="row">
 				<Col span={24}>
-					<div className="bar">
-						<label className="bar-title">MARKET INSIGHTS</label>
-					</div>
+					<HeadingBar />
 				</Col>
 			</Row>
 			<Row className="row">
