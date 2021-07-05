@@ -13,11 +13,11 @@ const Sidebar = () => {
 		<>
 			<Sider trigger={null} collapsible collapsed={collapsed} className="sider hiddenMobile">
 				<div onClick={() => setCollapsed(!collapsed)} className="sider-menu" style={{ cursor: 'pointer' }}>
-					{collapsed && <img src={MenuIcon} className="sider-img-toggle" />}
+					{collapsed && <img src={MenuIcon} className="sider-img-toggle" alt="Menu Icon" />}
 					{!collapsed && <LeftOutlined />}
 				</div>
 				<div className="sider-menu" style={{ background: '#D2D2D2' }}>
-					<img src={DashboardIcon} className="sider-img-menu" />
+					<img src={DashboardIcon} className="sider-img-menu" alt="Dashboard Icon" />
 					{!collapsed && <span className="sider-img-menu-label">Dashboard</span>}
 				</div>
 			</Sider>

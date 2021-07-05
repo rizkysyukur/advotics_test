@@ -6,13 +6,22 @@ import Heading from './components/heading';
 import Sidebar from './components/sidebar';
 import { BestSellingProvider } from './contexts/best-selling-context';
 import { TopCompetitorProvider } from './contexts/top-competitor-context';
+import SidebarMobile from './components/sidebar-mobile';
+import { useState } from 'react';
 
 function App() {
   const { Content } = Layout;
-
+  const [showSidebarMobile, setShowSidebarMobile] = useState(false);
+  
   return (
     <Layout>
-      <Heading />
+      <Heading
+        showSidebarMobile={showSidebarMobile}
+        setShowSidebarMobile={(e) => setShowSidebarMobile(e)}
+      />
+      <SidebarMobile 
+        visible={showSidebarMobile}
+        setVisible={(e) => setShowSidebarMobile(e)} />
       <Layout>
         <Sidebar />
         <Content>

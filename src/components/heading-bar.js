@@ -12,7 +12,7 @@ const HeadingBar = () => {
 				<Col span={12}>
 					<div className="bar-help">
 						<img src={HelpIcon} alt="Help" width="20" />
-						<a href="#" className="bar-text-link">Click Here for Help</a>
+						<a href="javascript.void(0)" className="bar-text-link">Click Here for Help</a>
 						<UpOutlined style={{ color: '#FFFFFF', fontWeight: 'bold' }} />
 					</div>
 				</Col>

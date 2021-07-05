@@ -1,5 +1,4 @@
 import { Row, Col } from "antd";
-import Product1Img from '../assets/img/product1.png';
 
 const ListItem = (props) => {
 	return (
