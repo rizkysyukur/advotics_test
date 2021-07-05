@@ -256,7 +256,9 @@ h1 {
 	height: 30px !important;
 	width: 30px !important;
 	font-size: 15px !important;
-	margin: 10px;
+	margin: 10px !important;
+	background-color: #37B04C !important;
+	color: #FFFFFF !important;
 }
 
 .calendar {

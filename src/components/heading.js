@@ -1,6 +1,6 @@
 import AdvoticsLogoImg from '../assets/img/advotics-logo.png';
 import { UserOutlined } from '@ant-design/icons';
-import { Avatar } from 'antd';
+import { Avatar, Button } from 'antd';
 import LogoutIcon from '../assets/icon/logout.png';
 import { MenuOutlined } from '@ant-design/icons';
 
@@ -17,7 +17,7 @@ const Heading = (props) => {
 					<p className="header-companyname-label">Company Name</p>
 				</div>
 			</div>
-			<button className="showedMobile navbar-burger-menu" onClick={() => props.setShowSidebarMobile(!props.showSidebarMobile)}><MenuOutlined /></button>
+			<Button onClick={() => props.setShowSidebarMobile(!props.showSidebarMobile)} icon={<MenuOutlined />} size="large" className="showedMobile navbar-burger-menu" />
 		</nav>
 	)
 }
