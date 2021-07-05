@@ -1,4 +1,7 @@
-import { Row, Col, Card } from "antd";
+import { Row, Col } from "antd";
+import Profit from "../components/profit";
+import Chart from "../components/chart";
+import List from "../components/list";
 
 const Dashboard = () => {
 	return (
@@ -6,7 +9,7 @@ const Dashboard = () => {
 			<Row className='row'>
 				<Col span={12}><h1 className="header-title">Dashboard</h1></Col>
 				<Col span={12}>
-				<div className="bar">
+					<div className="bar">
 						<label className="bar-title">Input Calender</label>
 					</div>
 				</Col>
@@ -19,64 +22,19 @@ const Dashboard = () => {
 				</Col>
 			</Row>
 			<Row className="row">
-				<Col span={4}>
-					<Card>Disini diisi harga dan keranjang</Card>
+				<Col xxl={{span: 5}} xl={{span: 7}} lg={{span: 8}} md={{span: 11}} sm={{span: 15}} xs={{span: 24}}>
+					<Profit />
 				</Col>
 			</Row>
 			<Row className="row" gutter={16}>
-				<Col span={12} className="gutter-row">
-					<Card>
-						Disini diisi dengan chart <br />
-						Disini diisi dengan chart <br />
-						Disini diisi dengan chart <br />
-						Disini diisi dengan chart <br />
-						Disini diisi dengan chart <br />
-						Disini diisi dengan chart <br />
-						Disini diisi dengan chart <br />
-						Disini diisi dengan chart <br />
-						Disini diisi dengan chart <br />
-						Disini diisi dengan chart <br />
-						Disini diisi dengan chart <br />
-						Disini diisi dengan chart <br />
-						Disini diisi dengan chart <br />
-						Disini diisi dengan chart <br />
-						</Card>
+				<Col className="col gutter-row" span={24} lg={{span: 12}} sm={{span: 24}}>
+					<Chart />
 				</Col>
-				<Col span={6} className="gutter-row">
-					<Card>
-						Disini diisi best selling <br />
-						Disini diisi best selling <br />
-						Disini diisi best selling <br />
-						Disini diisi best selling <br />
-						Disini diisi best selling <br />
-						Disini diisi best selling <br />
-						Disini diisi best selling <br />
-						Disini diisi best selling <br />
-						Disini diisi best selling <br />
-						Disini diisi best selling <br />
-						Disini diisi best selling <br />
-						Disini diisi best selling <br />
-						Disini diisi best selling <br />
-						Disini diisi best selling <br />
-						</Card>
+				<Col className="col gutter-row" span={24} lg={{span: 6}} sm={{span: 12}}>
+					<List />
 				</Col>
-				<Col span={6} className="gutter-row">
-					<Card>
-						Disini diisi top competitor <br />
-						Disini diisi top competitor <br />
-						Disini diisi top competitor <br />
-						Disini diisi top competitor <br />
-						Disini diisi top competitor <br />
-						Disini diisi top competitor <br />
-						Disini diisi top competitor <br />
-						Disini diisi top competitor <br />
-						Disini diisi top competitor <br />
-						Disini diisi top competitor <br />
-						Disini diisi top competitor <br />
-						Disini diisi top competitor <br />
-						Disini diisi top competitor <br />
-						Disini diisi top competitor <br />
-						</Card>
+				<Col className="col gutter-row" span={24} lg={{span: 6}} sm={{span: 12}}>
+					<List />
 				</Col>
 			</Row>
 		</div>

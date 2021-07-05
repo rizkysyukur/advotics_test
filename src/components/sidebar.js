@@ -10,16 +10,18 @@ const Sidebar = () => {
 	const [collapsed, setCollapsed] = useState(true);
 
 	return (
-		<Sider trigger={null} collapsible collapsed={collapsed} className="sider">
-			<div onClick={() => setCollapsed(!collapsed)} className="sider-menu" style={{ cursor: 'pointer' }}>
-				{collapsed && <img src={MenuIcon} className="sider-img-toggle" />}
-				{!collapsed && <LeftOutlined />}
-			</div>
-			<div className="sider-menu" style={{ background: '#D2D2D2' }}>
-				<img src={DashboardIcon} className="sider-img-menu" />
-				{!collapsed && <span className="sider-img-menu-label">Dashboard</span>}
-			</div>
-		</Sider>
+		<>
+			<Sider trigger={null} collapsible collapsed={collapsed} className="sider hiddenMobile">
+				<div onClick={() => setCollapsed(!collapsed)} className="sider-menu" style={{ cursor: 'pointer' }}>
+					{collapsed && <img src={MenuIcon} className="sider-img-toggle" />}
+					{!collapsed && <LeftOutlined />}
+				</div>
+				<div className="sider-menu" style={{ background: '#D2D2D2' }}>
+					<img src={DashboardIcon} className="sider-img-menu" />
+					{!collapsed && <span className="sider-img-menu-label">Dashboard</span>}
+				</div>
+			</Sider>
+		</>
 	)
 }
 

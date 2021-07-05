@@ -9,7 +9,7 @@ function App() {
   const { Content } = Layout;
 
   return (
-    <Layout style={{ height: '100vh' }}>
+    <Layout>
       <Heading />
       <Layout>
         <Sidebar />
